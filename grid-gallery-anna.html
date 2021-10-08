@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A PhotoGallery by Grid Layout</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .photogallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr));
+        grid-auto-rows: 300px;
+        grid-gap: 7px;
+        grid-auto-flow: dense;
+        margin: 50px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        overflow: hidden;
+      }
+      .photogallery__item__big {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .photogallery__item_horizontal {
+        grid-row: span 2;
+      }
+      .photogallery__item_vertical {
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A PhotoGallery by Grid Layout</h1>
+
+    <div class="container">
+      <section class="photogallery">
+        <div class="photogallery__item photogallery__item_big">
+          <img src="https://i.ibb.co/Tr6MN1W/photo-10.jpg" alt="image-01" />
+        </div>
+        <div class="photogallery__item photogallery__item_horizontal">
+          <img src="https://i.ibb.co/VmnLJzT/photo-12.jpg" alt="image-02" />
+        </div>
+        <div class="photogallery__item">
+          <img src="https://i.ibb.co/GV6k4Bt/photo-08.jpg" alt="image-03" />
+        </div>
+        <div class="photogallery__item photogallery__item_horizontal">
+          <img src="https://i.ibb.co/XXKrvv1/photo-09.jpg" alt="image-04" />
+        </div>
+        <div class="photogallery__item photogallery__item_horizontal">
+          <img src="https://i.ibb.co/S5tkQgP/photo-07.jpg" alt="image-05" />
+        </div>
+        <div class="photogallery__item photogallery__item_vertical">
+          <img src="https://i.ibb.co/xFfxM74/photo-03.jpg" alt="image-06" />
+        </div>
+        <div class="photogallery__item">
+          <img src="https://i.ibb.co/7jh48rn/photo-01.jpg" alt="image-07" />
+        </div>
+        <div class="photogallery__item photogallery__item_vertical">
+          <img src="https://i.ibb.co/vXR94Cs/photo-02.jpg" alt="image-08" />
+        </div>
+        <div class="photogallery__item photogallery__item_big">
+          <img src="https://i.ibb.co/84GcfZC/photo-06.jpg" alt="image-09" />
+        </div>
+        <div class="photogallery__item">
+          <img src="https://i.ibb.co/TrDWxzZ/photo-05.jpg" alt="image-10" />
+        </div>
+        <div class="photogallery__item photogallery__item_vertical">
+          <img src="https://i.ibb.co/60NWgXN/photo-11.jpg" alt="image-11" />
+        </div>
+        <div class="photogallery__item">
+          <img src="https://i.ibb.co/KV8SPTS/photo-04.jpg" alt="image-12" />
+        </div>
+        <div class="photogallery__item">
+          <img src="https://i.ibb.co/xFfxM74/photo-03.jpg" alt="image-13" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

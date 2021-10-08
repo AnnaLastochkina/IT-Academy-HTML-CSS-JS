@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>form styled</title>
+    <script
+      src="https://kit.fontawesome.com/b7ef1f6b16.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        background-color: lightgrey;
+        font-family: sans-serif;
+      }
+
+      fieldset {
+        background-color: white;
+        border: 2px solid blue;
+        border-radius: 15px;
+        padding-left: 30px;
+        padding-top: 100px;
+        width: 440px;
+        margin: 60px auto;
+        position: relative;
+      }
+
+      legend {
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        width: 100%;
+        height: 60px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-color: blue;
+        text-align: center;
+        line-height: 60px;
+        color: white;
+        font-size: 18px;
+      }
+
+      .md {
+        margin-bottom: 10px;
+      }
+
+      .buttons {
+        width: 200px;
+        margin: 10px auto;
+      }
+
+      textarea {
+        resize: vertical;
+
+        min-height: 60px;
+        max-height: 400px;
+      }
+
+      label {
+        display: block;
+        margin: 5px 0;
+      }
+
+      input {
+        width: 86%;
+        border-radius: 5px;
+        border: 2px solid gray;
+        margin-bottom: 5px;
+        height: 23px;
+        padding-left: 29px;
+        background-size: 22px 22px;
+        background-repeat: no-repeat;
+        background-position: 3px;
+      }
+
+      #name {
+        background-image: url(https://i.ibb.co/5LQbzxK/Screenshot-2021-08-26-at-20-31-57.png);
+      }
+
+      #email {
+        background-image: url(https://i.ibb.co/wcvvwfH/Screenshot-2021-08-26-at-20-39-50.png);
+      }
+
+      #phone {
+        background-image: url(https://i.ibb.co/pZQJhpJ/Screenshot-2021-08-26-at-20-28-11.png);
+      }
+
+      #textarea {
+        background-image: url(https://i.ibb.co/N3kGsn4/Screenshot-2021-08-26-at-20-25-24.png);
+      }
+
+      textarea {
+        width: 380px;
+        border-radius: 5px;
+        border: 2px solid gray;
+        margin-bottom: 5px;
+        height: 23px;
+        padding-left: 29px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 3px 3px;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 2px solid blue;
+
+        border-radius: 5px;
+      }
+
+      .button {
+        width: 150px;
+        margin: 10px auto;
+      }
+
+      button {
+        background-color: blue;
+        color: white;
+        text-align: center;
+        width: 145px;
+        height: 35px;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+
+      .variant2 input {
+        width: 200px;
+      }
+
+      .variant2 #text {
+        margin-left: 80px;
+      }
+
+      .variant2 #email {
+        margin-left: 66px;
+      }
+
+      .variant2 #phone {
+        margin-left: 43px;
+      }
+
+      .variant2 label {
+        display: inline;
+      }
+      .variant2 #name {
+        margin-left: 80px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend><i class="fas fa-home"></i>Анкета пользователя</legend>
+
+        <div class="variant2 name md">
+          <label for="name">Имя:</label>
+          <input
+            id="name"
+            name="name"
+            type="name"
+            placeholder="Введите Ваше имя"
+          />
+        </div>
+
+        <div class="variant2 email md">
+          <label for="email" focus>Е-mail:</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Введите Ваш адрес почты"
+            autofocus
+          />
+        </div>
+
+        <div class="variant2 phone md">
+          <label for="phone">Телефон:</label>
+          <input id="phone" type="email" placeholder="Введите номер телефона" />
+        </div>
+
+        <div class="textarea md">
+          <div>
+            <label for="textarea" class="textarea">Сообщение:</label>
+          </div>
+          <div>
+            <textarea
+              id="textarea"
+              class="textarea"
+              placeholder="Введите сообщение"
+              name="textarea"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="button">
+          <button type="button" name="button1">Отправить</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

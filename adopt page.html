@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adapt-page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .image {
+        max-width: 980px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+      }
+      img {
+        display: block;
+        width: 100%;
+      }
+      .header {
+        width: 100%;
+        background-color: #577b93;
+        height: 80px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+      }
+      h1 {
+        max-width: 980px;
+        width: 100%;
+        color: black;
+        font-size: 25px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .content {
+        margin: 0 auto;
+        padding: 0;
+        max-width: 980px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 980px;
+        width: 100%;
+        text-align: center;
+      }
+      li {
+        width: 22%;
+        background-color: lightblue;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 4% 40px 0;
+        float: left;
+        text-decoration: none;
+      }
+      ul li p {
+        padding: 15px;
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      .content li:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 240px;
+        width: 100%;
+        display: block;
+        background-color: rgb(107, 164, 199);
+        padding: 10px 0;
+        text-decoration: none;
+      }
+      .clearfix::after {
+        content: "";
+        visibility: hidden;
+        display: block;
+      }
+      .text {
+        max-width: 980px;
+        width: 100%;
+        text-align: justify;
+        font-size: 15px;
+        font-weight: normal;
+        margin: 20px auto 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+      }
+      .indent {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      .desc {
+        font-weight: bold;
+      }
+      .footer {
+        width: 100%;
+        background-color: rgb(67, 138, 182);
+        height: 55px;
+        margin-top: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+      }
+      .copy {
+        width: 980px;
+        max-width: 100%;
+        color: white;
+        font-size: 13px;
+        color: white;
+        padding-top: 18px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      @media (max-width: 768px) {
+        .image {
+          max-width: 768px;
+          width: 100%;
+        }
+        h1 {
+          max-width: 768px;
+          width: 100%;
+        }
+        .content li {
+          width: 100%;
+          float: none;
+        }
+        a {
+          max-width: 768px;
+          width: 100%;
+        }
+        h3 {
+          padding-top: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image">
+      <img
+        src="https://www.e-xecutive.ru/uploads/article/image/1985303/thumb_metlife09.jpg"
+        alt="photo"
+      />
+    </div>
+
+    <div class="header">
+      <h1>Очень важные новости</h1>
+    </div>
+
+    <div class="content">
+      <ul>
+        <li>
+          <h3>Новость 1</h3>
+          <p>
+            Невероятно интересные новости произошли на этой неделе. Читай далее,
+            если интересно.
+          </p>
+          <a href="#">Читать далее</a>
+        </li>
+
+        <li>
+          <h3>Новость 2</h3>
+          <p>
+            Невероятно интересные новости произошли на этой неделе. Читай далее,
+            если интересно.
+          </p>
+          <a href="#">Читать далее</a>
+        </li>
+        <li>
+          <h3>Новость 3</h3>
+          <p>
+            Невероятно интересные новости произошли на этой неделе. Читай далее,
+            если интересно.
+          </p>
+          <a href="#">Читать далее</a>
+        </li>
+        <li>
+          <h3>Новость 4</h3>
+          <p>
+            Невероятно интересные новости произошли на этой неделе. Читай далее,
+            если интересно.
+          </p>
+          <a href="#">Читать далее</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text">
+      <p class="indent">What is Lorem Ipsum?</p>
+      <span class="desc">Lorem Ipsum</span>Lorem Ipsum is simply dummy text of
+      the printing and typesetting industry. Lorem Ipsum has been the industry's
+      standard dummy text ever since the 1500s, when an unknown printer took a
+      galley of type and scrambled it to make a type specimen book. It has
+      survived not only five centuries, but also the leap into electronic
+      typesetting, remaining essentially unchanged. It was popularised in the
+      1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+      and more recently with desktop publishing software like Aldus PageMaker
+      including versions of Lorem Ipsum.
+
+      <p class="indent">Why do we use it?</p>
+      It is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+
+      <p class="indent">Where does it come from?</p>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+      roots in a piece of classical Latin literature from 45 BC, making it over
+      2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
+      College in Virginia, looked up one of the more obscure Latin words,
+      consectetur, from a Lorem Ipsum passage, and going through the cites of
+      the word in classical literature, discovered the undoubtable source. Lorem
+      Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+      Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
+      book is a treatise on the theory of ethics, very popular during the
+      Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+      amet..", comes from a line in section 1.10.32. The standard chunk of Lorem
+      Ipsum used since the 1500s is reproduced below for those interested.
+      Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by
+      Cicero are also reproduced in their exact original form, accompanied by
+      English versions from the 1914 translation by H. Rackham.
+
+      <p class="indent">Where can I get some?</p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </div>
+
+    <div class="footer">
+      <div class="copy">&copy; Копирайт 2017</div>
+    </div>
+  </body>
+</html>

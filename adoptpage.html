@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adapt-page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .image {
+        content: url(https://i.ibb.co/fVJR0BT/572c4ada9c0d2c14721a9bafc89f76c7.jpg);
+        height: 400px;
+        width: 100%;
+        display: block;
+      }
+      .content-position {
+        max-width: 980px;
+        margin: 0px auto;
+      }
+      .menu-position {
+        max-width: 980px;
+        margin: 0px auto;
+      }
+      .title {
+        background-color: lightgrey;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 28px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
+      .title-bg {
+        background: lightgrey;
+        background-position: left top;
+        background-repeat: repeat-y;
+      }
+      .news {
+        min-height: 200px;
+        max-width: 20%;
+        background-color: whitesmoke;
+        float: left;
+      }
+      .news-3-position {
+        margin-right: 7%;
+      }
+      .news-2-position {
+        margin-right: 6%;
+      }
+      .news-1-position {
+        margin-right: 7%;
+      }
+      .news-title {
+        text-align: center;
+        font-weight: bold;
+        padding-top: 10px;
+      }
+      .news-content {
+        text-align: center;
+        margin-bottom: 60px;
+        margin-top: 20px;
+      }
+      .news-button {
+        text-align: center;
+        font-weight: bold;
+        background-color: lightskyblue;
+        height: 30px;
+        margin: 0;
+        padding-top: 10px;
+      }
+      .footer {
+        background-color: lightskyblue;
+        font-size: 15px;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .footer-bg {
+        background: lightskyblue;
+        background-position: left top;
+        background-repeat: repeat-y;
+      }
+      .copyright {
+        font-weight: bold;
+      }
+      .clearfix {
+        clear: both;
+      }
+      @media all and (max-width: 768px) {
+        .news {
+          min-height: 100px;
+          float: none;
+          max-width: 100%;
+          margin-right: 0px;
+        }
+      }
+      @media all and (max-width: 768px) {
+        .image {
+          content: url(https://i.ibb.co/fVJR0BT/572c4ada9c0d2c14721a9bafc89f76c7.jpg);
+          max-width: 100%;
+          max-height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-position">
+      <img class="image" />
+    </div>
+    <div class="title-bg">
+      <div class="title content-position">Все про Большой Теннис</div>
+    </div>
+    <div class="menu-position">
+      <div class="news news-1-position">
+        <p class="news-title">НАДАЛЬ УСТАЛ</p>
+        <p class="news-content">
+          Я принял решение остаток года провести на пляжах Майорки. Я Устал и
+          хочу любви!
+        </p>
+        <p class="news-button">Читать дальше</p>
+      </div>
+      <div class="news news-2-position">
+        <p class="news-title">БЕЛОРУСЫ МОЛОДЦЫ</p>
+        <p class="news-content">
+          Белорусская команда по теннису поднялась в рейтинге и заняла 69 место.
+          Молодцы!
+        </p>
+        <p class="news-button">Читать дальше</p>
+      </div>
+      <div class="news news-3-position">
+        <p class="news-title">БОЛЬШОЙ ШЛЕМ</p>
+        <p class="news-content">
+          Турнир Большого Шлема пройдет в Молодечно. Даешь Молодечно Open 2021!
+        </p>
+        <p class="news-button">Читать дальше</p>
+      </div>
+      <div class="news news-4-position">
+        <p class="news-title">БЕЛОРУСЫ НЕ МОЛОДЦЫ</p>
+        <p class="news-content">
+          Белорусская команда по теннису опустилась в рейтинге и заняла 96
+          место.
+        </p>
+        <p class="news-button">Читать дальше</p>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="content-position">
+      <h3>Что такое Теннис</h3>
+      <p>
+        Те́ннис (англ. tennis) или большо́й теннис — вид спорта, в котором
+        соперничают либо два игрока («одиночная игра»), либо две команды,
+        состоящие из двух игроков («парная игра»). Задачей соперников —
+        тенниси́ста или тенниси́стки — является при помощи ракеток отправлять мяч
+        на сторону соперника так, чтобы тот не смог его отразить, не более чем
+        после первого падения мяча на игровом поле на половине соперника. У
+        современного тенниса в английском языке есть официальное название
+        ла́ун-теннис (англ. lawn [lɔːn] «лужайка») для отличия от реал-тенниса
+        (или жё-де-пом во французском варианте названия) — более старой
+        разновидности, в которую играют в закрытых помещениях и на совершенно
+        другом типе корта.
+      </p>
+      <h3>История</h3>
+      <p>
+        Прямым предшественником современного тенниса считается игра в
+        помещениях, до конца XIX века носившая то же название, а в настоящее
+        время известная как реал-теннис, корт-теннис или жё-де-пом (фр. jeu de
+        paume, в буквальном переводе игра ладонью). Жё-де-пом, в который могли
+        играть одновременно до 12 человек[4], появился в XI веке, по-видимому, в
+        монастырях. Вначале в этой игре, как и в ручной пелоте, мяч отбивали
+        рукой, затем появились перчатки, биты и, наконец, в XVI веке, ракетки и
+        сетка. На это же время приходится пик популярности жё-де-пома, в который
+        играли французские, английские и испанские короли того времени
+      </p>
+      <h3>Правила игры</h3>
+      <p>
+        Игроки (команды) находятся по разные стороны сетки. Один из них является
+        подающим и вводит мяч в игру, производит подачу. Второй игрок —
+        принимающий подачу. Задача игроков — направлять мяч ударами ракетки на
+        сторону соперника, попадая при этом мячом в границы корта. Мяч, попавший
+        в поле противника и отлетевший за заднюю линию до касания ракетки
+        принимающего (эйс) также даёт выигрыш подающему. Игрок должен успеть в
+        свою очередь ударить по мячу, пока тот не коснулся корта более одного
+        раза. Возможно также ударить по мячу, не дожидаясь его падения на корт —
+        сыграть с лёта. Игрок, допустивший ошибку, проигрывает розыгрыш, а его
+        соперник набирает очко. Очки набираются в порядке 15 за первый
+        выигранный розыгрыш, 30 за второй и 40 за третий. После набора 40 очков
+        проигрывающий получает брейк-пойнт, который необходимо отыграть за
+        столько ударов, сколько нужно, чтобы сравнять счёт в гейме. В
+        зависимости от счёта также бывает сет-пойнт или матч-пойнт.
+      </p>
+      <h3>Турниры</h3>
+      <p>
+        Теннисные турниры обычно разделяются на мужские и женские. В каждом
+        турнире может участвовать заранее определённое количество игроков.
+        Наиболее распространены соревнования одиночные мужские и женские, парные
+        мужские и женские (участвуют команды из двух игроков одного пола),
+        смешанные парные (команды из игроков обоих полов). Нередко проводятся
+        турниры для определённой возрастной группы: детские, юношеские, турниры
+        ветеранов.
+      </p>
+    </div>
+    <div class="footer-bg">
+      <div class="footer content-position">
+        <p class="copyright">&copy;Наши права в конституции!</p>
+      </div>
+    </div>
+  </body>
+</html>
